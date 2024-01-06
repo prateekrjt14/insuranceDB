@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .icon {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .icon:hover {
+    transform: scale(1.4);
+    color: red;
+  }
+  
+  .icon img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .icon p {
+    margin: 10px 10px 0;
+    font-size: 18px;
+  }
+
+    input {width: auto;}
+  

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Patient Details</title>
+    <link rel="stylesheet" href="/stylesheets/retrievePatient.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Details</h1>
+        <ul>
+            <li><strong>Name:</strong> <%= patient.name %></li>
+            <li><strong>Date of Birth:</strong> <%= patient.dob %></li>
+            <li><strong>Gender:</strong> <%= patient.gender %></li>
+            <li><strong>Contact:</strong> <%= patient.contact %></li>
+            <li><strong>Address:</strong> <%= patient.address %></li>
+            <li><strong>Unique ID:</strong> <%= patient.uniqueid %></li>
+            <li><strong>Coverage Amount:</strong> <%= insurance.coverageAmount %></li>
+        </ul>
+    </div>
+    <footer id="footer">2023 © Jagruth Kothi-Banglewale Insurance</footer>
+
+    <script src="/javascripts/retrievePatient.js"></script>
+</body>
+</html>

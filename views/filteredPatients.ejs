@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Patients</title>
+  <link rel="stylesheet" href="/stylesheets/retrievePatient.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Patients in <%= cityName %></h1>
+    <ul>
+      <% patients.forEach(patient => { %><br>
+        <li><strong>Name:</strong> <%= patient.name %></li>
+        <li><strong>Date of Birth:</strong> <%= patient.dob %></li>
+        <li><strong>Gender:</strong> <%= patient.gender %></li>
+        <li><strong>Contact:</strong> <%= patient.contact %></li>
+        <li><strong>Address:</strong> <%= patient.address %></li>
+        <li><strong>Unique ID:</strong> <%= patient.uniqueid %></li><br><br>
+      <% }); %>
+    </ul>
+  </div>
+  <footer id="footer">2023 © Jagruth Kothi-Banglewale Insurance</footer>
+</body>
+</html>

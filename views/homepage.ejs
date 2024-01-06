@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Records Management</title>
+  <link rel="stylesheet" href="/stylesheets/homepage.css">
+</head>
+<body>
+  <div class="container">
+    <div class="icon" onclick="navigate('addNewPatient')">
+      <img src="/images/addNewPatient.png" alt="Add Patient">
+      <p>Add Patient</p>
+    </div>
+
+    <div class="icon" onclick="navigate('updatePatient')">
+      <img src="/images/updatePatient.png" alt="Update Patient Details">
+      <p>Update Patient Details</p>
+    </div>
+
+    <div class="icon" onclick="deletePatient()">
+      <img src="/images/deletePatient.png" alt="Delete Patient">
+      <p>Delete Patient</p>
+    </div>
+
+    <div class="icon" onclick="retrievePatient()">
+      <img src="/images/retrievePatient.png" alt="Retrieve Patient Details">
+      <p>Retrieve Patient Details</p>
+    </div>
+
+    <div class="icon" onclick="filterByCity()">
+      <img src="/images/findByCity.png" alt="Filter By City">
+      <p>Filter By City or State</p>
+    </div>
+
+  </div>
+  <footer id="footer">2023 © Jagruth Kothi-Banglewale Insurance</footer>
+
+  <script src="/javascripts/homepage.js"></script>
+</body>
+</html>
